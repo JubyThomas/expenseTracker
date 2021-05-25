@@ -42,19 +42,10 @@ const App = () => {
   // );
 
   return (
-    <div>
-<BrowserRouter>
-<Switch>
-<Route path="/newexpense">
-        
+    <div id="root">
+
       <NewExpense onAddExpense={addExpenseHandler} />
       <Expenses items={expenses} />
-      </Route>
-      <Route path="/">
-
-      </Route>
-      </Switch>
-      </BrowserRouter>
     </div>
   );
 };
